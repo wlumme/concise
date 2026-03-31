@@ -11,7 +11,7 @@
     </div>
     <div class="vertical-container">
       {% for page in site.pages %} {% if page.title %}
-      <a href="{{ site.baseurl | append: page.url }}"> {{ page.title }} </a>
+      <a href="{{ site.baseurl | append: page.url }}"> {{ page.index-title | default: page.title }} </a>
       {% endif %} {% endfor %}
     </div>
   </body>
