@@ -3,6 +3,8 @@
 
 $accent-color: {{ site.color.accent | default: "green" }};
 $background-color: {{ site.color.background | default: "white" }};
+$color-darkmode-background: {{ site.color.darkmode.background | default: "black" }};
+$color-darkmode-foreground: {{ site.color.darkmode.foreground | default: "white" }};
 $foreground-color: {{ site.color.foreground | default: "black" }};
 
 @import "main";

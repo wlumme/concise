@@ -6,3 +6,6 @@ color:
   accent: green
   background: white
   foreground: black
+  darkmode:
+    background: black
+    foreground: white

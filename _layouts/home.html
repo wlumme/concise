@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="page-center vertical-container">
-    <h1 class="title">{{ site.title }}</h1>
-    {% if site.description %}
-    <div>{{ site.description }}</div>
-    {% endif %}
-    <div>
-      <!-- TODO: Social links -->
-    </div>
-    <div class="vertical-container">
-      {% for page in site.pages %} {% if page.title %}
-      <a href="{{ site.baseurl | append: page.url }}"> {{ page.index-title | default: page.title }} </a>
-      {% endif %} {% endfor %}
+  <body>
+    {% include header.html %}
+    <div class="page-center vertical-container">
+      <h1 class="title">{{ site.title }}</h1>
+      {% if site.description %}
+      <div>{{ site.description }}</div>
+      {% endif %}
+      <div>
+        <!-- TODO: Social links -->
+      </div>
+      <div class="vertical-container">
+        {% for page in site.pages %} {% if page.title %}
+        <a href="{{ site.baseurl | append: page.url }}"> {{ page.index-title | default: page.title }} </a>
+        {% endif %} {% endfor %}
+      </div>
     </div>
   </body>
 </html>

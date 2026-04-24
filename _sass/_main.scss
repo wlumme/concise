@@ -21,8 +21,27 @@ body {
   padding: $content-padding;
 }
 
+.darkmode {
+  background-color: $color-darkmode-background;
+  color: $color-darkmode-foreground;
+  .darkmode-button {
+    fill: $color-darkmode-foreground;
+  }
+}
+
+.darkmode-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  fill: $foreground-color;
+}
+
+.float-right {
+  float: right;
+}
+
 .page-center {
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   text-align: center;
 }
