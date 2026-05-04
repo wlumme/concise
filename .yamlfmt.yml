@@ -1,0 +1,6 @@
+eof_newline: true
+force_quote_style: double
+include:
+  - .
+max_line_length: 88
+trim_trailing_whitespace: true
